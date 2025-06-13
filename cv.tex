@@ -1,0 +1,180 @@
+\documentclass[letterpaper,11pt,oneside]{article}
+\usepackage[utf8]{inputenc}
+\usepackage{setspace}
+\usepackage{hyperref}
+\usepackage{graphicx}
+\usepackage{orcidlink}
+\usepackage[left=1in, right=1in, bottom=1.25in, top=1.25in]{geometry}
+\usepackage{calc}
+
+% Settings
+\setlength{\parindent}{0pt}
+\pagenumbering{gobble}
+
+% Commands
+\newcommand{\spacedentry}[2]{%
+  \begin{tabular*}{\textwidth}{@{\extracolsep{\fill}} l r}
+    #1 & #2 \\
+  \end{tabular*}
+}
+\newcommand{\datedentry}[2]{%
+  \begin{tabular*}{\textwidth}{@{\extracolsep{\fill}} p{0.80\textwidth} r}
+    #1 & #2 \\
+  \end{tabular*}
+}
+\newcommand{\sectionheader}[1]{%
+{\Large{#1}}
+\vspace{2ex}
+\hrule
+\vspace{2ex}
+}
+\newlength{\titlewidth}
+
+\newcommand{\narrowpar}[2]{%
+  \settowidth{\titlewidth}{#1}%
+  \begin{minipage}{0.80\textwidth}%
+    \hangindent=\titlewidth
+    \hangafter=1
+    #1%
+    \if\relax\detokenize{#1}\relax
+      % do nothing
+    \else
+      ~%
+    \fi
+    #2%
+  \end{minipage}%
+}
+
+
+% Document
+
+\begin{document}
+{\LARGE{\textbf{Nathaniel Dene Hoffman}}}\\
+\vspace{-2ex}
+\hrule
+\vspace{2ex}
+
+% Contact
+
+\spacedentry{Carnegie Mellon University}{\href{mailto:dene@cmu.edu}{dene@cmu.edu}}
+\spacedentry{Department of Physics}{Phone: +1\,(636)\,432-4128}
+\spacedentry{5000 Forbes Avenue}{\href{https://www.denehoffman.com}{www.denehoffman.com}}
+\spacedentry{Pittsburgh, PA 15213}{\orcidlinkc{0000-0002-8865-2286}}
+
+\vspace{1em}
+% Education
+\sectionheader{Education}
+
+\textbf{Carnegie Mellon University}\\
+Ph.D., Physics, 2019\textendash Present.\\
+Field: Nuclear and Particle Physics\\
+M.S., Physics, 2021.
+\\\\
+\textbf{Case Western Reserve University}\\
+B.S., Physics, 2019.\\
+B.A., Music, 2019.\\
+
+% Research
+\sectionheader{Research}
+
+\datedentry{\textbf{Department of Physics, CMU} }{2019\textendash Present}
+Ph.D. Candidate (Advisor: Reinhard Schumacher)\\
+\narrowpar{Thesis:}{\textit{Photoproduction of $K_S^0$ Pairs at GlueX} (in progress)}\\
+
+\datedentry{\textbf{Department of Physics, CMU}}{2020}\\
+Research Assistant (Advisor: Michael Widom)\\
+\narrowpar{Project:}{\textit{Cluster Variation Method Analysis of BCC Heusler Alloys}}\\
+
+\datedentry{\textbf{Department of Physics, CWRU}}{2016\textendash 2019}
+Research Assistant (Advisor: Giuseppe Strangi)\\
+\narrowpar{Project:}{\textit{Material Properties and Fabrication of Thin-Film Metamaterials}}\\
+
+% Teaching
+\sectionheader{Teaching}
+
+\datedentry{\textbf{Department of Physics, CMU}}{2019\textendash 2020}
+Teaching Assistant, Basic Experimental Physics\\
+
+\datedentry{\textbf{Department of Physics, CWRU}}{2017\textendash 2019}
+Teaching Assistant, Honors Introduction to Electromagnetism\\
+
+% Awards
+\sectionheader{Awards and Fellowships}
+\datedentry{\textbf{Michelson-Moreley Scholarship}
+CWRU}{2015\textendash 2019}
+
+\newpage
+
+% Languages
+\sectionheader{Languages}
+English (native), French (intermediate), Spanish (beginner)\\
+
+% Skills
+\sectionheader{Skills}
+Rust, Python, C/C++, \LaTeX, Mathematica, ROOT, MPI\\
+
+% Publications
+\sectionheader{Publications}
+ElKabbash, M., \textbf{Hoffman, N.}, Lininger, A. R., Jalil, S. A., Letsou, T., Hinczewski, M., Strangi, G., \& Guo, C. (2023). \textit{Fano resonant optical coatings platform for full gamut and high purity structural colors.} Nature Communications, \textbf{14}(1). \href{https://doi.org/10.1038/s41467-023-39602-2}{DOI: 10.1038/s41467-023-39602-2}\\
+
+ElKabbash, M., Letsou, T., Jalil, S. A., \textbf{Hoffman, N.}, Zhang, J., Rutledge, J., Lininger, A. R., Fann, C.-H., Hinczewski, M., Strangi, G., \& Guo, C. (2021). \textit{Fano-resonant ultrathin film optical coatings.} Nature Nanotechnology, \textbf{16}(4), 440–446. \href{https://doi.org/10.1038/s41565-020-00841-9}{DOI: 10.1038/s41565-020-00841-9}\\
+
+\textbf{Hoffman, N.}, \& Widom, M. (2021). \textit{Cluster Variation Method Analysis of Correlations and Entropy in BCC Solid Solutions.} Metallurgical and Materials Transactions A, \textbf{52}(5), 1551–1558. \href{https://doi.org/10.1007/s11661-021-06182-z}{DOI: 10.1007/s11661-021-06182-z}\\
+
+ElKabbash, M., Sreekanth, K. V., Fraiwan, A., Cole, J., Alapan, Y., Letsou, T., \textbf{Hoffman, N.}, Guo, C., Sankaran, R. M., Gurkan, U. A., Hinczewski, M., \& Strangi, G. (2020). \textit{Ultrathin-film optical coating for angle-independent remote hydrogen sensing.} Measurement Science and Technology, \textbf{31}(11), 115201. \href{https://doi.org/10.1088/1361-6501/ab9fd8}{DOI: 10.1088/1361-6501/ab9fd8}\\
+
+ElKabbash, M., Ilker, E., Letsou, T., \textbf{Hoffman, N.}, Yaney, A., Hinczewski, M., \& Strangi, G. (2017). \textit{Iridescence-free and narrowband perfect light absorption in critically coupled metal high-index dielectric cavities.} Optics Letters, \textbf{42}(18), 3598. \href{https://doi.org/10.1364/ol.42.003598}{DOI: 10.1364/ol.42.003598}\\
+
+ElKabbash, M., Sousa‐Castillo, A., Nguyen, Q., Mariño‐Fernández, R., \textbf{Hoffman, N.}, Correa‐Duarte, M. A., \& Strangi, G. (2017). \textit{Tunable Black Gold: Controlling the Near‐Field Coupling of Immobilized Au Nanoparticles Embedded in Mesoporous Silica Capsules.} Advanced Optical Materials, \textbf{5}(21). \href{https://doi.org/10.1002/adom.201700617}{DOI: 10.1002/adom.201700617}\\
+
+% Talks
+\sectionheader{Talks}
+
+\datedentry{\textbf{Jefferson Lab Users Organization Annual Meeting} (upcoming)}{June 25, 2025}
+\narrowpar{Title:}{\textit{Spectroscopy with K-short Mesons from GlueX} (invited)}\\
+
+\datedentry{\textbf{PWA13/ATHOS8}}{May 28, 2024}
+\narrowpar{Title:}{\textit{Photoproduction of $K_S$ Pairs at GlueX}}\\
+
+\datedentry{\textbf{APS April Meeting}}{April 17, 2023}
+\narrowpar{Title:}{\textit{Photoproduction of Mesons Decaying into $K_SK_S$ at GlueX}}\\
+
+\datedentry{\textbf{Jefferson Lab Users Organization Meeting at APS}}{April 16, 2023}
+\narrowpar{Title:}{\textit{GlueX/Hall D Overview} (invited)}\\
+
+\datedentry{\textbf{APS Division of Nuclear Physics}}{October 14, 2021}
+\narrowpar{Title:}{\textit{Meson and Baryon Photoproduction using $\gamma p \to K_SK_Sp$ at GlueX}}\\
+
+\sectionheader{Work Experience}
+\datedentry{\textbf{Engineer at \href{https://foliophotonics.com/}{Folio Photonics}}}{2019}
+\narrowpar{}{Activities included data reading/writing experiments on multilayer films and developing software for testing and automation. I was tasked with developing programs to scan through layered disks and measure layer positions and thicknesses, as well as programs which ran testing procedures on physical devices using LabVIEW.}\\\\
+
+% Projects
+\sectionheader{Projects}
+
+\textbf{laddu} is a library for analysis of particle physics data. It is intended to be a simple and efficient alternative to some of the other tools out there. \texttt{laddu} is written in Rust with bindings to Python via PyO3 and maturin. The goal of this project is to allow users to perform complex amplitude analyses (like partial-wave analyses) without complex code or configuration files. It additionally supports the Message Passing Interface (MPI) protocol for parallelization in high-perfomance computing environments. \texttt{laddu} prioritizes the Parquet data format while providing methods to read and convert ROOT files.\\
+\textbf{Link:} \href{https://github.com/denehoffman/laddu}{https://github.com/denehoffman/laddu}\\
+
+\textbf{ganesh} is a Rust crate providing common optimization algorithms as well a straightforward, trait-based interface to create extension algorithms. It provides pure-Rust implementations of the L-BFGS-B and Nelder-Mead minimization algorithms along with implementations of the Affine-Invariant Ensemble Sampler and Ensemble Slice Sampler for Markov chain Monte Carlo analyses.\\
+\textbf{Link:} \href{https://github.com/denehoffman/ganesh}{https://github.com/denehoffman/ganesh}\\
+
+\textbf{modak} is a Python library with a Rust backend used to generate data pipelines for scientific computing workflows. It uses a Rust-based task scheduler to create Python subprocesses which perform individual tasks such as data processing and plotting.\\
+\textbf{Link:} \href{https://github.com/denehoffman/modak}{https://github.com/denehoffman/modak}\\
+
+% References
+\newpage
+
+\sectionheader{References}
+\noindent \begin{tabular}{@{} l l}
+ \href{http://www-meg.phys.cmu.edu/~schumach/}{Dr. Reinhard Schumacher} & \href{http://www.curtismeyer.com/index.php/main}{Dr. Curtis Meyer} \\
+ Department of Physics &  Department of Physics  \\
+ Carnegie Mellon University &  Carnegie Mellon University \\
+ \small{\href{mailto:schumacher@cmu.edu}{schumacher@cmu.edu},\,+1\,(412)\,268-5177} & \small{\href{mailto:cmeyer@cmu.edu}{cmeyer@cmu.edu},\,+1\,(987)\,654-3210} \\
+& \\
+ \href{http://nanoplasm.wrphysics.org/}{Dr. Giuseppe Strangi} & \href{https://scholar.google.com/citations?user=bhQY_u8AAAAJ&hl=en}{Dr. Mohamed ElKabbash}  \\
+ Department of Physics &  Quantum Photonics Group\\
+ Case Western Reserve University &  Massachusetts Institute of Technology \\
+ \small{\href{mailto:giuseppe.strangi@case.edu}{giuseppe.strangi@case.edu},\,+1\,(216)\,368-6918} & \small{\href{mailto:melkabba@mit.edu}{melkabba@mit.edu}} \\
+\end{tabular}
+
+\end{document}
