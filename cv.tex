@@ -105,13 +105,37 @@ CWRU}{2015\textendash 2019}
 
 \newpage
 
-% Languages
-\sectionheader{Languages}
-English (native), French (intermediate), Spanish (beginner)\\
+% Talks
+\sectionheader{Talks}
 
-% Skills
-\sectionheader{Skills}
-Rust, Python, C/C++, \LaTeX, Mathematica, ROOT, MPI\\
+\datedentry{\textbf{Jefferson Lab Users Organization Annual Meeting} (upcoming)}{June 25, 2025}
+\narrowpar{Title:}{\textit{Spectroscopy with K-short Mesons from GlueX} (invited)}\\
+
+\datedentry{\textbf{PWA13/ATHOS8}}{May 28, 2024}
+\narrowpar{Title:}{\textit{Photoproduction of $K_S$ Pairs at GlueX}}\\
+
+\datedentry{\textbf{APS April Meeting}}{April 17, 2023}
+\narrowpar{Title:}{\textit{Photoproduction of Mesons Decaying into $K_SK_S$ at GlueX}}\\
+
+\datedentry{\textbf{Jefferson Lab Users Organization Meeting at APS}}{April 16, 2023}
+\narrowpar{Title:}{\textit{GlueX/Hall D Overview} (invited)}\\
+
+\datedentry{\textbf{APS Division of Nuclear Physics}}{October 14, 2021}
+\narrowpar{Title:}{\textit{Meson and Baryon Photoproduction using $\gamma p \to K_SK_Sp$ at GlueX}}\\
+
+% Projects
+\sectionheader{Projects}
+
+\textbf{laddu} is a library for analysis of particle physics data. It is intended to be a simple and efficient alternative to some of the other tools out there. \texttt{laddu} is written in Rust with bindings to Python via PyO3 and maturin. The goal of this project is to allow users to perform complex amplitude analyses (like partial-wave analyses) without complex code or configuration files. It additionally supports the Message Passing Interface (MPI) protocol for parallelization in high-perfomance computing environments. \texttt{laddu} prioritizes the Parquet data format while providing methods to read and convert ROOT files.\\
+\textbf{Link:} \href{https://github.com/denehoffman/laddu}{https://github.com/denehoffman/laddu}\\
+
+\textbf{ganesh} is a Rust crate providing common optimization algorithms as well a straightforward, trait-based interface to create extension algorithms. It provides pure-Rust implementations of the L-BFGS-B and Nelder-Mead minimization algorithms along with implementations of the Affine-Invariant Ensemble Sampler and Ensemble Slice Sampler for Markov chain Monte Carlo analyses.\\
+\textbf{Link:} \href{https://github.com/denehoffman/ganesh}{https://github.com/denehoffman/ganesh}\\
+
+\textbf{modak} is a Python library with a Rust backend used to generate data pipelines for scientific computing workflows. It uses a Rust-based task scheduler to create Python subprocesses which perform individual tasks such as data processing and plotting.\\
+\textbf{Link:} \href{https://github.com/denehoffman/modak}{https://github.com/denehoffman/modak}\\
+
+
 
 % Publications
 \sectionheader{Publications}
@@ -139,7 +163,7 @@ GlueX Collaboration, (2024). \textit{Upper Limit on the Photoproduction Cross Se
 Pybus, J. R., et al. (GlueX Collaboration), (2024). \textit{Search for axion-like particles through nuclear Primakoff production using the GlueX detector}. Physics Letters B, \textbf{855}, 138790. \href{https://doi.org/10.1016/j.physletb.2024.138790}{DOI: 10.1016/j.physletb.2024.138790}\\
 
 GlueX Collaboration, (2023). \textit{Measurement of spin-density matrix elements in $\rho(770)$ production with a linearly polarized photon beam at $E_{\gamma} = 8.2$\textemdash $8.8$ GeV}. Physical Review C, \textbf{108}(5). \href{https://doi.org/10.1103/physrevc.108.055204}{DOI: 10.1103/physrevc.108.055204}\\
-
+\newpage
 GlueX Collaboration, (2023). \textit{Measurement of the $J/\psi$ photoproduction cross section over the full near-threshold kinematic region}. Physical Review C, \textbf{108}(2). \href{https://doi.org/10.1103/physrevc.108.025201}{DOI: 10.1103/physrevc.108.025201}\\
 
 GlueX Collaboration, (2022). \textit{Search for Photoproduction of Axionlike Particles at GlueX}. Physical Review D, \textbf{105}(5). \href{https://doi.org/10.1103/physrevd.105.052007}{DOI: 10.1103/physrevd.105.052007}\\
@@ -148,40 +172,17 @@ GlueX Collaboration, (2022). \textit{Measurement of Spin Density Matrix Elements
 $\Lambda(1520)$ Photoproduction at $8.2$\textemdash $8.8$ GeV}. Physical Review C, \textbf{105}(3). \href{https://doi.org/10.1103/physrevc.105.035201}{DOI: 10.1103/physrevc.105.035201}\\
 
 
-% Talks
-\sectionheader{Talks}
-
-\datedentry{\textbf{Jefferson Lab Users Organization Annual Meeting} (upcoming)}{June 25, 2025}
-\narrowpar{Title:}{\textit{Spectroscopy with K-short Mesons from GlueX} (invited)}\\
-
-\datedentry{\textbf{PWA13/ATHOS8}}{May 28, 2024}
-\narrowpar{Title:}{\textit{Photoproduction of $K_S$ Pairs at GlueX}}\\
-
-\datedentry{\textbf{APS April Meeting}}{April 17, 2023}
-\narrowpar{Title:}{\textit{Photoproduction of Mesons Decaying into $K_SK_S$ at GlueX}}\\
-
-\datedentry{\textbf{Jefferson Lab Users Organization Meeting at APS}}{April 16, 2023}
-\narrowpar{Title:}{\textit{GlueX/Hall D Overview} (invited)}\\
-
-\datedentry{\textbf{APS Division of Nuclear Physics}}{October 14, 2021}
-\narrowpar{Title:}{\textit{Meson and Baryon Photoproduction using $\gamma p \to K_SK_Sp$ at GlueX}}\\
-\newpage
 \sectionheader{Work Experience}
 \datedentry{\textbf{Engineer at \href{https://foliophotonics.com/}{Folio Photonics}}}{2019}
 \narrowpar{}{Activities included data reading/writing experiments on multilayer films and developing software for testing and automation. I was tasked with developing programs to scan through layered disks and measure layer positions and thicknesses, as well as programs which ran testing procedures on physical devices using LabVIEW.}\\\\
 
-% Projects
-\sectionheader{Projects}
+% Languages
+\sectionheader{Languages}
+English (native), French (intermediate), Spanish (beginner)\\
 
-\textbf{laddu} is a library for analysis of particle physics data. It is intended to be a simple and efficient alternative to some of the other tools out there. \texttt{laddu} is written in Rust with bindings to Python via PyO3 and maturin. The goal of this project is to allow users to perform complex amplitude analyses (like partial-wave analyses) without complex code or configuration files. It additionally supports the Message Passing Interface (MPI) protocol for parallelization in high-perfomance computing environments. \texttt{laddu} prioritizes the Parquet data format while providing methods to read and convert ROOT files.\\
-\textbf{Link:} \href{https://github.com/denehoffman/laddu}{https://github.com/denehoffman/laddu}\\
-
-\textbf{ganesh} is a Rust crate providing common optimization algorithms as well a straightforward, trait-based interface to create extension algorithms. It provides pure-Rust implementations of the L-BFGS-B and Nelder-Mead minimization algorithms along with implementations of the Affine-Invariant Ensemble Sampler and Ensemble Slice Sampler for Markov chain Monte Carlo analyses.\\
-\textbf{Link:} \href{https://github.com/denehoffman/ganesh}{https://github.com/denehoffman/ganesh}\\
-
-\textbf{modak} is a Python library with a Rust backend used to generate data pipelines for scientific computing workflows. It uses a Rust-based task scheduler to create Python subprocesses which perform individual tasks such as data processing and plotting.\\
-\textbf{Link:} \href{https://github.com/denehoffman/modak}{https://github.com/denehoffman/modak}\\
-
+% Skills
+\sectionheader{Skills}
+Rust, Python, C/C++, \LaTeX, Mathematica, ROOT, MPI\\
 % References
 
 \sectionheader{References}
@@ -191,10 +192,15 @@ $\Lambda(1520)$ Photoproduction at $8.2$\textemdash $8.8$ GeV}. Physical Review 
  Carnegie Mellon University &  Carnegie Mellon University \\
  \small{\href{mailto:schumacher@cmu.edu}{schumacher@cmu.edu},\,+1\,(412)\,268-5177} & \small{\href{mailto:cmeyer@cmu.edu}{cmeyer@cmu.edu},\,+1\,(987)\,654-3210} \\
 & \\
- \href{http://nanoplasm.wrphysics.org/}{Dr. Giuseppe Strangi} & \href{https://scholar.google.com/citations?user=bhQY_u8AAAAJ&hl=en}{Dr. Mohamed ElKabbash}  \\
- Department of Physics &  Quantum Photonics Group\\
- Case Western Reserve University &  Massachusetts Institute of Technology \\
- \small{\href{mailto:giuseppe.strangi@case.edu}{giuseppe.strangi@case.edu},\,+1\,(216)\,368-6918} & \small{\href{mailto:melkabba@mit.edu}{melkabba@mit.edu}} \\
+ \href{https://scholar.google.com/citations?user=cK_dVFAAAAAJ&hl=en}{Dr. Matthew Shepherd} & \href{http://nanoplasm.wrphysics.org/}{Dr. Giuseppe Strangi} \\
+ Department of Physics & Department of Physics \\
+ Indiana University & Case Western Reserve University \\
+ \small{\href{mailto:mashephe@indiana.edu}{mashephe@indian.edu},\,+1\,(812)\,856-5808} & \small{\href{mailto:giuseppe.strangi@case.edu}{giuseppe.strangi@case.edu},\,+1\,(216)\,368-6918}
+& \\
+\href{https://scholar.google.com/citations?user=bhQY_u8AAAAJ&hl=en}{Dr. Mohamed ElKabbash} \\
+Quantum Photonics Group \\
+Massachusetts Institute of Technology \\
+\small{\href{mailto:melkabba@mit.edu}{melkabba@mit.edu}} \\
 \end{tabular}
 
 \end{document}
